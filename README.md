@@ -1,4 +1,4 @@
-# Introduction and Goals
+# Introduction, Goals, Outcome
 The S&P 500 stock market index was created in 1957, and it's a collection of US equities used to track the performance of the broader American equity market. Today, this index tracks the performance of 505 common stocks issued by 500 of the largest firms in the US by market capitalisation, and the index accounts for roughly 80% of the US equity market in terms of market cap.
 
 The S&P 500 index has changed over time as different public companies have been added to or removed from the index as a result of their growth or decline. Companies have also been removed from the index due to other reasons such as being taken private by private equity firms or because of mergers and acquisitions. For simplicity, the project will only use price data on extant constituents of the S&P 500 and will not consider companies who used to be part of the S&P 500.
@@ -7,7 +7,7 @@ The goal of this project is to use a long short-term memory (LSTM) network to ge
 
 Outcome: a test accuracy of 0.5573394298553467; better than I expected, but still not very good.
 
-# Conclusion and Future Study
+# Conclusion, Future Study, Recommendations
 From the results, we see that both data sets scored pretty similarly and that they both produced buy and sell predictions only slightly better than a coin toss. This suggests that the data used to predict the target could be filled with a lot of noise that the LSTM is using to make its predictions. Alternatively, this observation may suggest that more data (larger "sequence_length"s) may be needed for the LSTM to pick up reliable patterns.
 
 In the future, dimension reduction could reduce the amount of noise that the LSTM picks up. To perform dimensionality reduction, I would first run a logistic regression of all the stationary variables in the data set onto the target variable and then pick out the statisitically significant variables to move forward with in training and testing. An alternative approach would be to use the Boruta Algorithm, although I suspect it would take much longer and not function on my computer.
