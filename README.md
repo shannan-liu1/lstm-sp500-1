@@ -1,4 +1,4 @@
-# lstm-sp500-1
+# Introduction and Goals
 The S&P 500 stock market index was created in 1957, and it's a collection of US equities used to track the performance of the broader American equity market. Today, this index tracks the performance of 505 common stocks issued by 500 of the largest firms in the US by market capitalisation, and the index accounts for roughly 80% of the US equity market in terms of market cap.
 
 The S&P 500 index has changed over time as different public companies have been added to or removed from the index as a result of their growth or decline. Companies have also been removed from the index due to other reasons such as being taken private by private equity firms or because of mergers and acquisitions. For simplicity, the project will only use price data on extant constituents of the S&P 500 and will not consider companies who used to be part of the S&P 500.
